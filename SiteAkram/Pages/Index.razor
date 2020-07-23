@@ -17,7 +17,7 @@
     {
         var citacoes = await httpClient
             .GetFromJsonAsync<IEnumerable<Citacao>>("dados/citacoes.json")
-            .ConfigureAwait(false);
+            .ConfigureAwait(true);
 
         citacao = citacoes.ElementAt(new Random().Next(0, citacoes.Count()));
     }

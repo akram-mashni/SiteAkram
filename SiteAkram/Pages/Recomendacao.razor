@@ -1,9 +1,11 @@
-<span class="d-none d-sm-block">@Titulo (@Ano)</span>
-<span class="d-block d-sm-none">@Titulo<br /><small>@Ano</small></span>
+<span class="d-none d-sm-block text-justify"><strong>@Titulo (@Ano)</strong><br /><span>@ConteudoMarcial</span></span>
+<span class="d-block d-sm-none">@Titulo<br /><small>@Ano</small><br /><small>@ConteudoMarcial</small></span>
 
 @code {
     [Parameter]
     public string Titulo { get; set; } = string.Empty;
     [Parameter]
     public string Ano { get; set; } = string.Empty;
+    [Parameter]
+    public string ConteudoMarcial { get; set; } = string.Empty;
 }
